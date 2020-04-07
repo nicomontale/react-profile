@@ -1,9 +1,18 @@
 .header-color {
-  background: #64706bb0;
+  
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #835019, #da7c18);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #835019, #da7c18);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.drawer-color {
+  
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #835019, #da7c18) !important;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #835019, #da7c18) !important;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
@@ -81,6 +90,7 @@
 
 .projects-grid {
   display: flex;
+  
 
 }
 

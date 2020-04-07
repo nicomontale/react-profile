@@ -11,16 +11,16 @@ function App() {
 <Layout>
     <Header className="header-color" title={<Link style={{textDecoration: 'none', color:'white'}} to="/">Nicola Montaleone</Link>} sroll>
         <Navigation>
-            <Link to="/resume">RESUME</Link>
-            <Link to="/project">PROJECTS</Link>
-            <Link to="/contact">CONTACTS</Link>
+            <Link style={{textDecoration:'white'}} to="/resume">RESUME</Link>
+            <Link style={{textDecoration:'white'}} to="/project">PROJECTS</Link>
+          
         </Navigation>
     </Header>
-    <Drawer title={<Link style={{textDecoration: 'none', color:'black'}} to="/">Nicola Montaleone</Link>} sroll>
+    <Drawer  className="drawer-color"  title={<Link style={{textDecoration: 'none', color:'black'}} to="/">Nicola Montaleone</Link>} sroll>
         <Navigation>
-        <Link to="/resume">RESUME</Link>
-        <Link to="/project">PROJECTS</Link>
-        <Link to="/contact">CONTACTS</Link>
+        <Link style={{textDecoration:'white', color:'black'}} to="/resume">RESUME</Link>
+        <Link style={{textDecoration:'white',color:'black'}} to="/project">PROJECTS</Link>
+        
         </Navigation>
     </Drawer>
     <Content>

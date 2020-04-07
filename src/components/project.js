@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-
+import triporateImg from './triporate.png'
 
 class Project extends Component {
     constructor(props) {
         super(props);
-        this.state = { activeTab: 0 }
+        this.state = { activeTab: 0}
     }
+    
     toggleCategories() {
         if (this.state.activeTab === 0) {
             return (
@@ -74,7 +75,7 @@ class Project extends Component {
                 <div className="projects-grid">
                     <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
                         <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://icon-library.net/images/java-icon-image/java-icon-image-0.jpg) center / cover' }}></CardTitle>
-                        <CardText>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa.
+                        <CardText >Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa.
                         Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo,
                         quando un anonimo tipografo prese una cassetta di caratteri e li assemblò
         per preparare un testo campione. </CardText>
@@ -98,8 +99,8 @@ class Project extends Component {
 
     render() {
         return (
-            <div className="category-tabs">
-                <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple >
+            <div className="category-tabs" >
+                <Tabs  activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple >
                     <Tab>React</Tab>
                     <Tab>Java</Tab>
 
@@ -107,7 +108,7 @@ class Project extends Component {
 
                 </Tabs>
                 <section>
-                    <Grid>
+                    <Grid >
                         <Cell col={12}>
                             <div className="content">{this.toggleCategories()}</div>
                         </Cell>

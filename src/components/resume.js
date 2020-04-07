@@ -3,21 +3,22 @@ import {Grid, Cell} from 'react-mdl';
 import Education from './Education';
 import Experience from './Experience';
 import Skills from './Skills';
+import img1 from '../components/react-me.png';
 class Resume extends Component {
     render() {
         return(
         <div>
-        <Grid>
+        <Grid style={{backgroundColor: ' #da7c18'}}>
         <Cell col={4}> 
         <div  style={{textAlign:'center', }}>
-        <img src="https://cdn1.iconfinder.com/data/icons/user-pictures/101/malecostume-512.png"
+        <img src={img1}
         alt="avatar"
         style={{height:'200px'}}
         />
         
         </div>
         <h2 style={{paddingTop: '2em'}}> Nicola Montaleone</h2>
-        <h4 style={{color: 'grey'}}>Junior full stack developer</h4>
+        <h4 style={{color: 'black'}}>Junior full stack developer</h4>
         <hr style={{borderTop: '3px solid #8338b2', width: '50%'}}   />
         <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei fogli di caratteri trasferibili “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di impaginazione come Aldus PageMaker, che includeva versioni del Lorem Ipsum</p>
         <hr style={{borderTop: '3px solid #8338b2', width: '50%'}}   />
