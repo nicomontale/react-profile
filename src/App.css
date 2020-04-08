@@ -1,18 +1,21 @@
 .header-color {
   
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #835019, #da7c18);
+  background: -webkit-linear-gradient(to right,  #b0722f, #da7c18);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #835019, #da7c18);
+  background: linear-gradient(to right,  #b0722f, #da7c18);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+.demo-big-content{
+  font-family: 'Roboto', sans-serif;
 }
 .drawer-color {
   
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #835019, #da7c18) !important;
+  background: -webkit-linear-gradient(to left, #b0722f, #da7c18) !important;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #835019, #da7c18) !important;
+  background: linear-gradient(to left,#b0722f, #da7c18) !important;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
@@ -153,7 +156,21 @@
 }
 
 .resume-right-col {
-  background: #784918;
+  background:#da7c18;
   color: white;
   padding: 2em;
+  border-radius: 15px;
+  -webkit-box-shadow: 21px -17px 62px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 21px -17px 62px 0px rgba(0,0,0,0.75);
+box-shadow: 21px -17px 62px 0px rgba(0,0,0,0.75);
+}
+.mdl-progress{
+  background-color: grey; 
+}
+.category-tabs {
+ 
+  background: -webkit-linear-gradient(to right,  #b0722f, #da7c18);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,  #b0722f, #da7c18);
+
 }

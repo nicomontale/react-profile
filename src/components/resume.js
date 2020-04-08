@@ -8,7 +8,7 @@ class Resume extends Component {
     render() {
         return(
         <div>
-        <Grid style={{backgroundColor: ' #da7c18'}}>
+        <Grid style={{backgroundColor: ' #fc9c35'}}>
         <Cell col={4}> 
         <div  style={{textAlign:'center', }}>
         <img src={img1}
@@ -18,13 +18,14 @@ class Resume extends Component {
         
         </div>
         <h2 style={{paddingTop: '1em'}}> Nicola Montaleone</h2>
-        <h4 style={{color: 'black'}}>Junior  developer</h4>
+        <h4 style={{color: 'black', fontSize:'2em'}}>Junior  developer</h4>
         <hr style={{borderTop: '3px solid black', width: '50%'}}   />
         <p>Highly reliable junior developer with a strong work ethic. Sport is my strength; I love basketball and soccer. I am a person with great personal motivation and a spirit of initiative.
         I adore traveling and discovering something new every day! </p>
         <hr style={{borderTop: '3px solid black', width: '50%'}}   />
         <h5>Adress</h5>
         <p>Via Ozieri, 17</p>
+        <p>Torino, IT</p>
         <h5>Phone</h5>
         <p>+39 3409158662</p>
         <h5>Email</h5>
