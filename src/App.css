@@ -10,9 +10,7 @@
 .demo-big-content{
   
   font-family: 'Roboto', sans-serif;
-  background: -webkit-linear-gradient(to right,  #fc9c35, #da7c18);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right,  #fc9c35, #da7c18);
+  
 }
 .drawer-color {
   
