@@ -182,3 +182,9 @@ box-shadow: 21px -17px 62px 0px rgba(0,0,0,0.75);
 .mdl-grid {
   justify-content: space-between;
 }
+.hr {
+  border-radius: 20px;
+  border-top: 10px solid black;
+  border-radius:10px; 
+  width: 60%;
+}

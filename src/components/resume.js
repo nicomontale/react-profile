@@ -19,10 +19,10 @@ class Resume extends Component {
         </div>
         <h2 style={{paddingTop: '1em'}}> Nicola Montaleone</h2>
         <h4 style={{color: 'black', fontSize:'2em'}}>Junior  developer</h4>
-        <hr style={{borderTop: '3px solid black', width: '50%'}}   />
+        <hr style={{borderTop: '4px solid black', width: '50%'}}   />
         <p>Highly reliable junior developer with a strong work ethic. Sport is my strength; I love basketball and soccer. I am a person with great personal motivation and a spirit of initiative.
         I adore traveling and discovering something new every day! </p>
-        <hr style={{borderTop: '3px solid black', width: '50%'}}   />
+        <hr style={{borderTop: '4px solid black', width: '45%'}}   />
         <h5>Adress</h5>
         <p>Via Ozieri, 17</p>
         <p>Torino, IT</p>
@@ -34,15 +34,16 @@ class Resume extends Component {
         <Cell col={8} className="resume-right-col">
         <h2>Education</h2>
         <Education 
-        startYear= {2019}
-        endYear={2020}
-        schoolName="Talent Garden Innovation School"
-        schoolDescription="During the master I was able to deepen my knowledge in React." />
-        <Education 
         startYear= {2020}
         endYear={2020}
         schoolName="PCM"
         schoolDescription="Junior Java Developer" />
+        <Education 
+        startYear= {2019}
+        endYear={2020}
+        schoolName="Talent Garden Innovation School"
+        schoolDescription="During the master I was able to deepen my knowledge in React." />
+        
 
         <Education 
         startYear= {2014}
@@ -56,7 +57,7 @@ class Resume extends Component {
         schoolName="Liceo Scientifico Galileo Ferraris"
         schoolDescription="Diploma" />
 
-        <hr style={{borderTop:'3px solid black'}} />
+        <hr style={{borderTop:'4px solid black'}} />
 
         <h2>Experience</h2>
         <Experience 
@@ -71,7 +72,7 @@ class Resume extends Component {
         jobsName="Junior Social Media Manager"
         jobsDescriptions="With some of my friends we tried to start a clothing brand."
         />
-        <hr style={{borderTop:'3px solid black'}} />
+        <hr style={{borderTop:'4px solid black'}} />
         <h2>Skills</h2>
         <Skills
         Skills="JAVA"

@@ -11,7 +11,7 @@ class LandingPage extends Component {
                             alt="avatar"
                             className="avatar-image"/>
                         <div className="banner-text">
-                            <h1>Junior Developer</h1>
+                            <h2 style={{color:'white'}}>Junior Developer</h2>
 
                             <hr />
                             <p>JAVA   |    MYSQL   |   REACT     </p>
