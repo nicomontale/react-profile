@@ -12,7 +12,10 @@ class App extends React.Component{
         }
         
     }
-
+    close() {
+        var d = document.querySelector('.mdl-layout');
+        d.MaterialLayout.toggleDrawer();
+      }
    
         
     render() {
@@ -25,15 +28,15 @@ class App extends React.Component{
 <Layout>
     <Header className="header-color" title={<Link style={{textDecoration: 'none', color:'white'}} to="/">Nicola Montaleone</Link>} sroll>
         <Navigation>
-            <Link style={{textDecoration:'white'}} to="/resume">RESUME</Link>
+            <Link  style={{textDecoration:'white'}} to="/resume">RESUME</Link>
             <Link style={{textDecoration:'white'}} to="/project">PROJECTS</Link>
           
         </Navigation>
     </Header>
     <Drawer variant="temporary" className="drawer-color"  title={<Link style={{textDecoration: 'none', color:'black'}} to="/">Nicola Montaleone</Link>} sroll>
         <Navigation>
-        <Link  style={{textDecoration:'white', color:'black'}} to="/resume">RESUME</Link>
-        <Link  style={{textDecoration:'white',color:'black'}} to="/project">PROJECTS</Link>
+        <Link onClick={()=>document.querySelector('.mdl-layout__drawer').addEventListener('click', this.close())}  style={{textDecoration:'white', color:'black'}} to="/resume">RESUME</Link>
+        <Link onClick={()=>document.querySelector('.mdl-layout__drawer').addEventListener('click', this.close())}  style={{textDecoration:'white',color:'black'}} to="/project">PROJECTS</Link>
         
         </Navigation>
     </Drawer>
