@@ -14,7 +14,7 @@ class LandingPage extends Component {
                             <h1>Junior Developer</h1>
 
                             <hr />
-                            <p>JAVA   |    SQL   |   REACT     </p>
+                            <p>JAVA   |    MYSQL   |   REACT     </p>
                             <div className="social-links">
                                 {/* Linkedin */}
                                 <a href="https://www.linkedin.com/in/nicola-montaleone-7a3202194/" rel="noopener noreferrer" target="_black">

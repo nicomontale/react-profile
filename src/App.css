@@ -90,12 +90,25 @@
 
 .projects-grid {
   display: flex;
-  
-
+  margin:auto;
+  justify-content: space-between;
 }
 
 .projects-grid Card {
   justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+  .projects-grid {
+    display: inherit;
+    
+    
+  
+  }
+  .projects-grid Card {
+    
+    margin-top:20px;
+  }
+  
 }
 
 .contact-body {

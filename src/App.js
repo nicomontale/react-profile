@@ -1,9 +1,23 @@
 import React from 'react';
-import {Layout, Header, Navigation, Drawer, Content} from 'react-mdl';
+import {Layout, Header, Navigation, Drawer, Content, } from 'react-mdl';
 import './App.css';
 import Main from './components/main';
 import {Link} from 'react-router-dom';
-function App() {
+
+class App extends React.Component{
+    constructor(props) {
+        super(props)
+        this.state ={
+            isOpen : false
+        }
+        
+    }
+
+   
+        
+    render() {
+    
+   
   return (
     
    
@@ -16,10 +30,10 @@ function App() {
           
         </Navigation>
     </Header>
-    <Drawer  className="drawer-color"  title={<Link style={{textDecoration: 'none', color:'black'}} to="/">Nicola Montaleone</Link>} sroll>
+    <Drawer variant="temporary" className="drawer-color"  title={<Link style={{textDecoration: 'none', color:'black'}} to="/">Nicola Montaleone</Link>} sroll>
         <Navigation>
-        <Link style={{textDecoration:'white', color:'black'}} to="/resume">RESUME</Link>
-        <Link style={{textDecoration:'white',color:'black'}} to="/project">PROJECTS</Link>
+        <Link  style={{textDecoration:'white', color:'black'}} to="/resume">RESUME</Link>
+        <Link  style={{textDecoration:'white',color:'black'}} to="/project">PROJECTS</Link>
         
         </Navigation>
     </Drawer>
@@ -30,6 +44,7 @@ function App() {
 </Layout>
 </div>
   );
+    }
 }
 
 export default App;

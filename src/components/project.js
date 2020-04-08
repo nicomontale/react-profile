@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-import triporateImg from './triporate.png'
+
 
 class Project extends Component {
     constructor(props) {
@@ -11,8 +11,8 @@ class Project extends Component {
     toggleCategories() {
         if (this.state.activeTab === 0) {
             return (
-                <div className="projects-grid">
-                    <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                <div className="projects-grid" >
+                    <Card shadow={5} style={{ minWidth: '450',justifyContent: 'space-around'}}>
                         <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://s3-us-west-2.amazonaws.com/devcodepro/media/blog/como-funciona-reactjs.png) center / cover' }}></CardTitle>
                         <CardText>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa.
                         Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo,
@@ -29,7 +29,7 @@ class Project extends Component {
                     </Card>
 
 
-                    <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                    <Card shadow={5} style={{ minWidth: '450' }}>
                         <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://s3-us-west-2.amazonaws.com/devcodepro/media/blog/como-funciona-reactjs.png) center / cover' }}></CardTitle>
                         <CardText>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa.
                         Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo,
@@ -45,7 +45,7 @@ class Project extends Component {
                         </CardMenu>
                     </Card>
 
-                    <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                    <Card shadow={5} style={{ minWidth: '450'}}>
                         <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://s3-us-west-2.amazonaws.com/devcodepro/media/blog/como-funciona-reactjs.png) center / cover' }}></CardTitle>
                         <CardText>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa.
                         Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo,
@@ -74,7 +74,7 @@ class Project extends Component {
             return (
                 <div className="projects-grid">
                     <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://icon-library.net/images/java-icon-image/java-icon-image-0.jpg) center / cover' }}></CardTitle>
+                        <CardTitle style={{ color: '#fff', height: '306px', background: 'url(https://icon-library.net/images/java-icon-image/java-icon-image-0.jpg) center / cover' }}></CardTitle>
                         <CardText >Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa.
                         Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo,
                         quando un anonimo tipografo prese una cassetta di caratteri e li assemblò
@@ -100,8 +100,8 @@ class Project extends Component {
     render() {
         return (
             <div className="category-tabs" >
-                <Tabs  activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple >
-                    <Tab>React</Tab>
+                <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple >
+                    <Tab >React</Tab>
                     <Tab>Java</Tab>
 
 
