@@ -30,6 +30,7 @@
   background: linear-gradient(to right, #fc9c35, #da7c18);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   position: fixed;
+  justify-content: center;
   text-align: center;
   top: 0;
   left: 0;
