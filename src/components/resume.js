@@ -48,7 +48,7 @@ class Resume extends Component {
         startYear= {2014}
         endYear={2019}
         schoolName="Politecnico Di Torino"
-        schoolDescription="Bachelor's degreeCampo di studiManagement Engineering (IT branch)" />
+        schoolDescription="Bachelor's degree, Management Engineering (IT branch)" />
 
         <Education 
         startYear= {2009}

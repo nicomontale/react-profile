@@ -11,7 +11,7 @@ class Project extends Component {
     toggleCategories() {
         if (this.state.activeTab === 0) {
             return (
-                <div className="projects-grid" >
+                <div className="projects-grid"  >
                     <Card shadow={5} style={{ minWidth: '450',margin: 'auto'}}>
                         <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://s3-us-west-2.amazonaws.com/devcodepro/media/blog/como-funciona-reactjs.png) center / cover' }}>NTT DATA</CardTitle>
                         <CardText>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa.
@@ -99,8 +99,8 @@ class Project extends Component {
 
     render() {
         return (
-            <div className="category-tabs" >
-                <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple >
+            <div className="category-tabs"  >
+                <Tabs  activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple >
                     <Tab >React</Tab>
                     <Tab>Java</Tab>
 
@@ -109,7 +109,7 @@ class Project extends Component {
                 </Tabs>
                 <section>
                     <Grid >
-                        <Cell col={12}>
+                        <Cell col={12} >
                             <div className="content">{this.toggleCategories()}</div>
                         </Cell>
                     </Grid>
