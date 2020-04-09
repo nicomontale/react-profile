@@ -15,9 +15,9 @@
 .drawer-color {
   
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #fc9c35, #da7c18) !important;
+  background: -webkit-linear-gradient(to left, #fc9c35, #de8b33) !important;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left,#fc9c35, #da7c18) !important;
+  background: linear-gradient(to left,#fc9c35,  #de8b33) !important;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
@@ -25,7 +25,7 @@
 .landing-grid {
   background:#da7c18;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fc9c35, #da7c18);
+  background: -webkit-linear-gradient(to right, #fc9c35, );
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #fc9c35, #da7c18);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -45,9 +45,9 @@
 
 .banner-text {
   background: #64706bb0;
-  background: -webkit-linear-gradient(to right, #cb7d29, #da7c18);
+  background: -webkit-linear-gradient(to right, #cb7d29, #ac5c06);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #cb7d29, #da7c18);
+  background: linear-gradient(to right, #cb7d29, #ac5c06);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   opacity: 8;
   width: 75%;
@@ -203,10 +203,10 @@ box-shadow: 21px -17px 62px 0px rgba(0,0,0,0.75);
   width: 60%;
 }
 .mdl-card {
- border-radius:30px; 
- -webkit-box-shadow: 21px -17px 62px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 21px -17px 62px 0px rgba(0,0,0,0.75);
-box-shadow: 21px -17px 62px 0px rgba(0,0,0,0.75);
+ border-radius:20px; 
+ -webkit-box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
+ -moz-box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
+ box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
 }
 
  .mdl-card__actions{

@@ -17,11 +17,10 @@ class Resume extends Component {
         />
         
         </div>
-        <h2 style={{paddingTop: '1em'}}> Nicola Montaleone</h2>
-        <h4 style={{color: 'black', fontSize:'2em'}}>Junior  developer</h4>
+        <h2 style={{paddingTop: '1em', fontFamily: 'Roboto Mono,monospace' }}> Nicola Montaleone</h2>
+        <h4 style={{color: 'black', fontSize:'2em',fontFamily: 'Roboto Mono,monospace' }}>Junior  developer</h4>
         <hr style={{borderTop: '4px solid black', width: '50%'}}   />
-        <p>Highly reliable junior developer with a strong work ethic. Sport is my strength; I love basketball and soccer. I am a person with great personal motivation and a spirit of initiative.
-        I adore traveling and discovering something new every day! </p>
+        <p>Highly reliable and passionate junior developer with a solid work ethics. Sport is one of my worth-mentioning strengths: I enjoy playing both basketball and soccer during my free time. I am deeply motivated, and hold great sense of initiative. Travelling is one thing I would never give up on: discovering something new every day is what makes me willing to improve myself and tirelessly push my boundaries! </p>
         <hr style={{borderTop: '4px solid black', width: '45%'}}   />
         <h5>Adress</h5>
         <p>Via Ozieri, 17</p>
@@ -32,7 +31,7 @@ class Resume extends Component {
         <p><a style={{ color: "black"}} href="mailto:nicola.montaleone95@gmail.com" target="_top">Email: nicola.montaleone95@gmail.com</a></p>
         </Cell>
         <Cell col={8} className="resume-right-col">
-        <h2>Education</h2>
+        <h2 style={{fontFamily: 'Roboto Mono,monospace' }}>Education</h2>
         <Education 
         startYear= {2020}
         endYear={2020}
@@ -59,7 +58,7 @@ class Resume extends Component {
 
         <hr style={{borderTop:'4px solid black'}} />
 
-        <h2>Experience</h2>
+        <h2 style={{fontFamily: 'Roboto Mono,monospace' }}>Experience</h2>
         <Experience 
         startYear={2020}
         jobsName="Junior Developer"
@@ -73,7 +72,7 @@ class Resume extends Component {
         jobsDescriptions="With some of my friends we tried to start a clothing brand."
         />
         <hr style={{borderTop:'4px solid black'}} />
-        <h2>Skills</h2>
+        <h2 style={{fontFamily: 'Roboto Mono,monospace' }}>Skills</h2>
         <Skills
         Skills="JAVA"
         progress={80}
