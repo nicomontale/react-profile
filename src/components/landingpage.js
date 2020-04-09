@@ -12,7 +12,7 @@ class LandingPage extends Component {
                             alt="avatar"
                             className="avatar-image"/></Link>
                         <div className="banner-text">
-                            <h2 style={{color:'white',fontFamily: 'Major Mono Display'}}>Junior Developer</h2>
+                            <h2 style={{color:'white',fontFamily: 'Roboto Mono,monospace'}}>Junior Developer</h2>
 
                             <hr />
                             <p>JAVA   |    MYSQL   |   REACT     </p>
