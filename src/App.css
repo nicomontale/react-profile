@@ -110,7 +110,7 @@
 
 @media only screen and (max-width: 600px) {
   .projects-grid {
-    display: inline-block;
+    display: inherit;
     justify-content: center;
     
     
@@ -120,7 +120,7 @@
   }
   .mdl-card { 
     margin-top: 20px;  
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     min-width: 450;
   }
   
