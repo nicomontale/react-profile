@@ -111,7 +111,7 @@
 @media only screen and (max-width: 600px) {
   .projects-grid {
     display: inline-block;
-    min-width: 450;
+    
     
     
     
@@ -121,6 +121,9 @@
   .mdl-card { 
     margin-top: 20px;  
     margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 450;
   }
   
   
