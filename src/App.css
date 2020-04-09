@@ -211,6 +211,7 @@ box-shadow: 21px -17px 62px 0px rgba(0,0,0,0.75);
 
  .mdl-card__actions{
   text-align: center;
+  
 }
 .mdl-card__title_ntt{
   background-image: url('./components/ntt_data.png');
@@ -241,6 +242,7 @@ background-size: cover;
 }
 
 .mdl-card__title_tesi {
+
   background-image: url('./components/tesi.png');
   background-repeat: no-repeat;
 background-position: 0 0;
