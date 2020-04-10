@@ -39,8 +39,9 @@ class App extends React.Component{
           
         </Navigation>
     </Header>
-    <Drawer  id="myNav" className="drawer-color" title={<Link onClick={()=>document.querySelector('.mdl-layout__drawer').addEventListener('click', this.close()) && this.openNav() } style={{textDecoration: 'none', color:'black', fontFamily: 'Roboto Mono,monospace',fontSize:'15px'}} to="/">Nicola Montaleone</Link>} sroll>
+    <Drawer  id="myNav" className="drawer-color" title={<h3 onClick={()=>document.querySelector('.mdl-layout__drawer').addEventListener('click', this.close()) && this.openNav() } style={{textDecoration: 'none', color:'black', fontFamily: 'Roboto Mono,monospace',fontSize:'15px'}} to="/">Nicola Montaleone</h3>} sroll>
         <Navigation className="mdl-navigation-drawer">
+        <Link onClick={()=>document.querySelector('.mdl-layout__drawer').addEventListener('click', this.close())}  style={{textDecoration:'white', color:'black', fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/">HOME</Link>
         <Link onClick={()=>document.querySelector('.mdl-layout__drawer').addEventListener('click', this.close())}  style={{textDecoration:'white', color:'black', fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/resume">RESUME</Link>
         <Link onClick={()=>document.querySelector('.mdl-layout__drawer').addEventListener('click', this.close())}  style={{textDecoration:'white',color:'black', fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/project">PROJECTS</Link>
         
