@@ -99,7 +99,22 @@
   margin: auto;
   min-width: 450;
 }
-
+@media only screen and (max-width: 600px) {
+  .projects-grid {
+    display: inherit;
+    justify-content: center;
+    
+    
+    
+    
+  
+  }
+  .mdl-card { 
+    margin-top: 20px;  
+    margin-bottom: 20px;
+    min-width: 450;
+  }
+}
 
 
 
@@ -264,20 +279,7 @@ background-size: cover;
   color: #f1f1f1;
 }
 @media only screen and (max-width: 600px) {
-  .projects-grid {
-    display: inherit;
-    justify-content: center;
-    
-    
-    
-    
-  
-  }
-  .mdl-card { 
-    margin-top: 20px;  
-    margin-bottom: 20px;
-    min-width: 450;
-  }
+ 
 .drawer-color  mdl-navigation__link{font-size: 20px}
 .drawer-color  mdl-navigation__link :hover {
     color: #f1f1f1;
