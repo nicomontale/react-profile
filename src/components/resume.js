@@ -22,9 +22,9 @@ class Resume extends Component {
         <hr style={{borderTop: '4px solid black', width: '50%'}}   />
         <p>Highly reliable and passionate junior developer with a solid work ethics. Sport is one of my worth-mentioning strengths: I enjoy playing both basketball and soccer during my free time. I am deeply motivated, and hold great sense of initiative. Travelling is one thing I would never give up on: discovering something new every day is what makes me willing to improve myself and tirelessly push my boundaries! </p>
         <hr style={{borderTop: '4px solid black', width: '45%'}}   />
-        <h5>Adress</h5>
+        <h5>Address</h5>
         <p>Via Ozieri, 17</p>
-        <p>Torino, IT</p>
+        <p>Turin, IT</p>
         <h5>Phone</h5>
         <p>+39 3409158662</p>
         <h5>Email</h5>
@@ -34,7 +34,7 @@ class Resume extends Component {
         <h2 style={{fontFamily: 'Roboto Mono,monospace' }}>Education</h2>
         <Education 
         startYear= {2020}
-        endYear={2020}
+        
         schoolName="PCM"
         schoolDescription="Junior Java Developer" />
         <Education 
