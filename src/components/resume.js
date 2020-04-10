@@ -87,6 +87,17 @@ class Resume extends Component {
         Skills="ECLIPSE"
         progress={75}
         /> 
+        <Skills
+        Skills="VISUAL STUDIO"
+        progress={60}
+        /> <Skills
+        Skills="BACK-END"
+        progress={60}
+        /> 
+        <Skills
+        Skills="FRONT-END"
+        progress={50}
+        /> 
         </Cell>
         
         

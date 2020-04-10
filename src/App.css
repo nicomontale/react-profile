@@ -168,10 +168,10 @@
   background:#da7c18;
   color: white;
   padding: 2em;
-  border-radius: 15px;
-  -webkit-box-shadow: 21px -17px 62px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 21px -17px 62px 0px rgba(0,0,0,0.75);
-box-shadow: 21px -17px 62px 0px rgba(0,0,0,0.75);
+  border-radius: 12px;
+  -webkit-box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
+  -moz-box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
+  box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
 }
 .mdl-progress{
   background-color: grey; 
@@ -248,10 +248,10 @@ background-size: cover;
   /* Height & width depends on how you want to reveal the overlay (see JS below) */   
   
   
- 
-  background: -webkit-linear-gradient(to left, transparent, #f58003) !important;
+ opacity: 0.8;
+  background: -webkit-linear-gradient(to left, #fc9c35, #f58003) !important;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left,  transparent, #da7c18) !important;
+  background: linear-gradient(to left,  #fc9c35, #da7c18) !important;
  /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -293,12 +293,34 @@ background-size: cover;
 }
 
 }
-/* Position the close button (top right corner) */
+.mdl-progress {
 
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-
-/* Position the close button (top right corner) */
+    height: 10px;
+  }
+  .meter { 
+    height: 20px;  /* Can be anything */
+  text-align: inherit;
+    background: #555;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+  }
+.meter > div {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+ 
+  box-shadow: 
+    inset 0 2px 9px  rgba(255,255,255,0.3),
+    inset 0 -2px 6px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+}
 
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
