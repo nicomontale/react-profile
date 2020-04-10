@@ -260,10 +260,10 @@ background-size: cover;
 }
 
 /* When you mouse over the navigation links, change their color */
-.drawer-color  mdl-navigation__link :hover, .drawer-color  mdl-navigation__link:focus {
+.drawer-color  mdl-navigation__link:hover, .drawer-color  mdl-navigation__link:focus {
   color: #f1f1f1;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .projects-grid {
     display: inherit;
     justify-content: center;
