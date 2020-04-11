@@ -3,6 +3,7 @@ import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, 
 import img1 from '../components/ntt_data.png';
 import img_triporate from '../components/triporate.png';
 import img3 from '../components/tesi.png';
+import {Modal} from 'react-modal';
 
 class Project extends Component {
     constructor(props) {

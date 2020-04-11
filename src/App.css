@@ -10,6 +10,7 @@
 .demo-big-content{
   justify-content: center;
   font-family: 'Roboto', sans-serif;
+  z-index:100001;
   
 }
 
