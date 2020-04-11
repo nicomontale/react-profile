@@ -242,6 +242,17 @@ background-size: cover;
 
 }
 
+.modal {
+  
+  max-height: calc(100vh - 210px);
+  overflow-x: auto;
+  background-color:#f58003;
+  border-radius:20px; 
+  -webkit-box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
+  -moz-box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
+  box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
+
+}
 
 /* The Overlay (background) */
 .drawer-color {
@@ -316,17 +327,7 @@ background-size: cover;
   position: relative;
   overflow: hidden;
 }
-.modal {
-  
-    max-height: calc(100vh - 210px);
-    overflow-x: auto;
-    background-color:#f58003;
-    border-radius:20px; 
-    -webkit-box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
-    -moz-box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
-    box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
-  
-}
+
 
 
 
