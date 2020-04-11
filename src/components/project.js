@@ -82,7 +82,7 @@ class Project extends Component {
                             
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
-                        <IconButton name ="photo"style={{color: '#da7c18'}} onClick={this.handleShowDialogTrip} raised ripple/>
+                        <IconButton name ="photo" className="clickable" style={{color: '#da7c18'}} onClick={this.handleShowDialogTrip} raised ripple/>
                         
                           
                            
@@ -137,7 +137,7 @@ class Project extends Component {
                             
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
-                        <IconButton name ="photo"style={{color: '#da7c18'}}onClick={this.handleShowDialogTesi} raised ripple/>
+                        <IconButton name ="photo" className="clickable" style={{color: '#da7c18'}}onClick={this.handleShowDialogTesi} raised ripple/>
                        
                    
                         </CardMenu>
