@@ -52,7 +52,7 @@ class Project extends Component {
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
                         
-                        <IconButton name ="photo" clasName="clickable" style={{color: '#da7c18'}} onClick={this.handleShowDialogNTT} raised ripple/>
+                        <IconButton name ="photo" className="clickable" style={{color: '#da7c18'}} onClick={this.handleShowDialogNTT} raised ripple/>
                        
                           
                            
