@@ -45,7 +45,7 @@ class Project extends Component {
                         <CardMenu style={{ color: '#fff' }}>
                         
                         <IconButton name ="photo"style={{color: '#da7c18'}}onClick={this.handleOpenDialog} raised ripple>Show Dialog</IconButton>
-                        <Dialog className="modal" open={this.state.openDialog}>
+                        <Dialog id="dialog1" className="modal" open={this.state.openDialog}>
                           
                             <img src={img1} alt="ntt data" height="370px" width="480px"/>
                           
@@ -67,7 +67,7 @@ class Project extends Component {
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
                         <IconButton name ="photo"style={{color: '#da7c18'}}onClick={this.handleOpenDialog} raised ripple>Show Dialog</IconButton>
-                        <Dialog className="modal" open={this.state.openDialog}>
+                        <Dialog id="dialog2" className="modal" open={this.state.openDialog}>
                           <DialogContent>
                             <img  src={img_triporate} alt="triporate" height="370px" width="480px"/>
                           
@@ -90,7 +90,7 @@ class Project extends Component {
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }} >
                         <IconButton name ="photo"style={{color: '#da7c18'}}onClick={this.handleOpenDialog} raised ripple>Show Dialog</IconButton>
-                        <Dialog className="modal" open={this.state.openDialog}>
+                        <Dialog id="dialog3" className="modal" open={this.state.openDialog}>
                           
                             <img className="img_modal" src={img_triporate} alt="e_commerce" height="370px" width="480px"/>
                           
@@ -125,7 +125,7 @@ class Project extends Component {
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
                         <IconButton name ="photo"style={{color: '#da7c18'}}onClick={this.handleOpenDialog} raised ripple>Show Dialog</IconButton>
-                        <Dialog className="modal" open={this.state.openDialog}>
+                        <Dialog id="dialog4" className="modal" open={this.state.openDialog}>
                           
                             <img className="img_modal" src={img3} alt="tesi" height="400px" width="570px"/>
                           
