@@ -331,12 +331,14 @@ background-size: cover;
   box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
   z-index: 50;
   max-width: 100%;
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
  
 }
-
+.clickable {
+  cursor:pointer;
+}
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */

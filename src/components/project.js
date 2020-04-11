@@ -52,7 +52,7 @@ class Project extends Component {
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
                         
-                        <IconButton name ="photo"style={{color: '#da7c18'}} onClick={this.handleShowDialogNTT} raised ripple/>
+                        <IconButton name ="photo" clasName="clickable" style={{color: '#da7c18'}} onClick={this.handleShowDialogNTT} raised ripple/>
                        
                           
                            
@@ -63,10 +63,10 @@ class Project extends Component {
                         </CardMenu>
                     </Card>
                     {this.state.openDialogNTT && (
-                        <dialog
+                        <dialog open
                           className="modal"
                           
-                          open
+                         
                           onClick={this.handleShowDialogNTT}
                         >
                         <img src={img1} alt="ntt data" height="370px" width="480px" onClick={this.handleShowDialogNTT}/>
@@ -82,7 +82,7 @@ class Project extends Component {
                             
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
-                        <IconButton name ="photo"style={{color: '#da7c18'}} onClick={this.handleShowDialogTrip} raised ripple>Show Dialog</IconButton>
+                        <IconButton name ="photo"style={{color: '#da7c18'}} onClick={this.handleShowDialogTrip} raised ripple/>
                         
                           
                            
@@ -92,9 +92,10 @@ class Project extends Component {
                     </Card>
                     {this.state.openDialogTrip && (
                         <dialog
+                        open
                           className="modal"
                           
-                          open
+                          
                           onClick={this.handleShowDialogTrip}
                         >
                         <img  src={img_triporate} alt="triporate" height="370px" width="480px"  onClick={this.handleShowDialogTrip}/>
@@ -136,16 +137,17 @@ class Project extends Component {
                             
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
-                        <IconButton name ="photo"style={{color: '#da7c18'}}onClick={this.handleShowDialogTesi} raised ripple>Show Dialog</IconButton>
+                        <IconButton name ="photo"style={{color: '#da7c18'}}onClick={this.handleShowDialogTesi} raised ripple/>
                        
                    
                         </CardMenu>
                     </Card>
                     {this.state.openDialogTesi && (
                         <dialog
+                        open
                           className="modal"
                           
-                          open
+                          
                           onClick={this.handleShowDialogTesi}
                         >
                         <img  src={img3} alt="tesi" height="370px" width="480px"  onClick={this.handleShowDialogTesi}/>
