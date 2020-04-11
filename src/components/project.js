@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton, Dialog, DialogContent,DialogActions} from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton, Dialog,DialogActions} from 'react-mdl';
 import img1 from '../components/ntt_data.png';
 import img_triporate from '../components/triporate.png';
 import img3 from '../components/tesi.png';
@@ -8,27 +8,58 @@ class Project extends Component {
     constructor(props) {
         super(props);
         this.state = { 
+
            
 
             activeTab: 0}
         
-    this.handleOpenDialog = this.handleOpenDialog.bind(this);
-    this.handleCloseDialog = this.handleCloseDialog.bind(this);
+    this.handleOpenDialogNTT = this.handleOpenDialogNTT.bind(this);
+    this.handleCloseDialogNTT = this.handleCloseDialogNTT.bind(this);
+
+    this.handleOpenDialogTrip = this.handleOpenDialogTrip.bind(this);
+    this.handleCloseDialogTrip = this.handleCloseDialogTrip.bind(this);
+
+    this.handleOpenDialogTesi = this.handleOpenDialogTesi.bind(this);
+    this.handleCloseDialogTesi = this.handleCloseDialogTesi.bind(this);
  
     }
     
     
-    handleOpenDialog() {
+    handleOpenDialogNTT() {
         this.setState({
-          openDialog: true
+          openDialogNTT: true
         });
       }
     
-      handleCloseDialog() {
+      handleCloseDialogNTT() {
         this.setState({
-          openDialog: false
+          openDialogNTT: false
         });
       }
+
+      handleOpenDialogTrip() {
+        this.setState({
+          openDialogTrip: true
+        });
+      }
+    
+      handleCloseDialogTrip() {
+        this.setState({
+          openDialogTrip: false
+        });
+      }
+      handleOpenDialogTesi() {
+        this.setState({
+          openDialogTesi: true
+        });
+      }
+    
+      handleCloseDialogTesi() {
+        this.setState({
+          openDialogTesi: false
+        });
+      }
+    
     
     toggleCategories() {
         if (this.state.activeTab === 0) {
@@ -44,13 +75,13 @@ class Project extends Component {
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
                         
-                        <IconButton name ="photo"style={{color: '#da7c18'}}onClick={this.handleOpenDialog} raised ripple>Show Dialog</IconButton>
-                        <Dialog id="dialog1" className="modal" open={this.state.openDialog}>
+                        <IconButton name ="photo"style={{color: '#da7c18'}} onClick={this.handleOpenDialogNTT} raised ripple>Show Dialog</IconButton>
+                        <Dialog id="dialog1" className="modal" open={this.state.openDialogNTT}>
                           
                             <img src={img1} alt="ntt data" height="370px" width="480px"/>
                           
                           <DialogActions>
-                        <Button type='button' onClick={this.handleCloseDialog}>BACK</Button>
+                        <Button type='button' onClick={this.handleCloseDialogNTT}>BACK</Button>
                           </DialogActions>
                         </Dialog>
                     
@@ -66,16 +97,16 @@ class Project extends Component {
                             
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
-                        <IconButton name ="photo"style={{color: '#da7c18'}}onClick={this.handleOpenDialog} raised ripple>Show Dialog</IconButton>
-                        <Dialog id="dialog2" className="modal" open={this.state.openDialog}>
-                          <DialogContent>
+                        <IconButton name ="photo"style={{color: '#da7c18'}} onClick={this.handleOpenDialogTrip} raised ripple>Show Dialog</IconButton>
+                        <Dialog id="dialog2" className="modal" open={this.state.openDialogTrip}>
+                          
                             <img  src={img_triporate} alt="triporate" height="370px" width="480px"/>
                           
                           <DialogActions>
                             
-                            <Button type='button' onClick={()=>this.handleCloseDialog}>BACK</Button>
+                            <Button type='button' onClick={this.handleCloseDialogTrip}>BACK</Button>
                           </DialogActions>
-                          </DialogContent>
+                          
                         </Dialog>
                         </CardMenu>
                     </Card>
@@ -89,16 +120,8 @@ class Project extends Component {
                             
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }} >
-                        <IconButton name ="photo"style={{color: '#da7c18'}}onClick={this.handleOpenDialog} raised ripple>Show Dialog</IconButton>
-                        <Dialog id="dialog3" className="modal" open={this.state.openDialog}>
-                          
-                            <img className="img_modal" src={img_triporate} alt="e_commerce" height="370px" width="480px"/>
-                          
-                          <DialogActions>
-                            
-                            <Button type='button' onClick={this.handleCloseDialog}>BACK</Button>
-                          </DialogActions>
-                        </Dialog>
+                        <IconButton name ="photo"style={{color: '#da7c18'}}/>
+                        
                         </CardMenu>
                     </Card>
 
@@ -124,14 +147,14 @@ class Project extends Component {
                             
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
-                        <IconButton name ="photo"style={{color: '#da7c18'}}onClick={this.handleOpenDialog} raised ripple>Show Dialog</IconButton>
-                        <Dialog id="dialog4" className="modal" open={this.state.openDialog}>
+                        <IconButton name ="photo"style={{color: '#da7c18'}}onClick={this.handleOpenDialogTesi} raised ripple>Show Dialog</IconButton>
+                        <Dialog id="dialog4" className="modal" open={this.state.openDialogTesi}>
                           
                             <img className="img_modal" src={img3} alt="tesi" height="400px" width="570px"/>
                           
                           <DialogActions>
                             
-                            <Button type='button' onClick={this.handleCloseDialog}>BACK</Button>
+                            <Button type='button' onClick={this.handleCloseDialogTesi}>BACK</Button>
                           </DialogActions>
                         </Dialog>
                    
