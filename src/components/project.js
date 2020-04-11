@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton, Dialog,DialogActions} from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton} from 'react-mdl';
 import img1 from '../components/ntt_data.png';
 import img_triporate from '../components/triporate.png';
 import img3 from '../components/tesi.png';
-import {Modal} from 'react-modal';
+
 
 class Project extends Component {
     constructor(props) {
@@ -17,52 +17,25 @@ class Project extends Component {
 
             activeTab: 0}
         
-    this.handleOpenDialogNTT = this.handleOpenDialogNTT.bind(this);
-    this.handleCloseDialogNTT = this.handleCloseDialogNTT.bind(this);
-
-    this.handleOpenDialogTrip = this.handleOpenDialogTrip.bind(this);
-    this.handleCloseDialogTrip = this.handleCloseDialogTrip.bind(this);
-
-    this.handleOpenDialogTesi = this.handleOpenDialogTesi.bind(this);
-    this.handleCloseDialogTesi = this.handleCloseDialogTesi.bind(this);
+    
  
     }
     
     
-    handleOpenDialogNTT() {
-        this.setState({
-          openDialogNTT: true
-        });
-      }
     
-      handleCloseDialogNTT() {
-        this.setState({
-          openDialogNTT: false
-        });
-      }
+      handleShowDialogNTT = () => {
+        this.setState({ openDialogNTT: !this.state.openDialogNTT });
+        console.log('cliked');
+      };
+      handleShowDialogTrip = () => {
+        this.setState({ openDialogTrip: !this.state.openDialogTrip });
+        console.log('cliked');
+      };
 
-      handleOpenDialogTrip() {
-        this.setState({
-          openDialogTrip: true
-        });
-      }
-    
-      handleCloseDialogTrip() {
-        this.setState({
-          openDialogTrip: false
-        });
-      }
-      handleOpenDialogTesi() {
-        this.setState({
-          openDialogTesi: true
-        });
-      }
-    
-      handleCloseDialogTesi() {
-        this.setState({
-          openDialogTesi: false
-        });
-      }
+      handleShowDialogTesi = () => {
+        this.setState({ openDialogTesi: !this.state.openDialogTesi });
+        console.log('cliked');
+      };
     
     
     toggleCategories() {
@@ -79,18 +52,26 @@ class Project extends Component {
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
                         
-                        <IconButton name ="photo"style={{color: '#da7c18'}} onClick={this.handleOpenDialogNTT} raised ripple>Show Dialog</IconButton>
-                        <Dialog id="dialog1" className="modal" open={this.state.openDialogNTT}>
+                        <IconButton name ="photo"style={{color: '#da7c18'}} onClick={this.handleShowDialogNTT} raised ripple/>
+                       
                           
-                            <img src={img1} alt="ntt data" height="370px" width="480px"/>
+                           
                           
-                          <DialogActions>
-                        <Button type='button' onClick={this.handleCloseDialogNTT}>BACK</Button>
-                          </DialogActions>
-                        </Dialog>
+                          
+                        
                     
                         </CardMenu>
                     </Card>
+                    {this.state.openDialogNTT && (
+                        <dialog
+                          className="modal"
+                          
+                          open
+                          onClick={this.handleShowDialogNTT}
+                        >
+                        <img src={img1} alt="ntt data" height="370px" width="480px" onClick={this.handleShowDialogNTT}/>
+                        </dialog>
+                      )}
 
 
                     <Card shadow={5} >
@@ -101,20 +82,24 @@ class Project extends Component {
                             
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
-                        <IconButton name ="photo"style={{color: '#da7c18'}} onClick={this.handleOpenDialogTrip} raised ripple>Show Dialog</IconButton>
-                        <Dialog id="dialog2" className="modal" open={this.state.openDialogTrip}>
+                        <IconButton name ="photo"style={{color: '#da7c18'}} onClick={this.handleShowDialogTrip} raised ripple>Show Dialog</IconButton>
+                        
                           
-                            <img  src={img_triporate} alt="triporate" height="370px" width="480px"/>
+                           
                           
-                          <DialogActions>
-                            
-                            <Button type='button' onClick={this.handleCloseDialogTrip}>BACK</Button>
-                          </DialogActions>
                           
-                        </Dialog>
                         </CardMenu>
                     </Card>
-
+                    {this.state.openDialogTrip && (
+                        <dialog
+                          className="modal"
+                          
+                          open
+                          onClick={this.handleShowDialogTrip}
+                        >
+                        <img  src={img_triporate} alt="triporate" height="370px" width="480px"  onClick={this.handleShowDialogTrip}/>
+                        </dialog>
+                      )}
                     <Card shadow={5}>
                         <CardTitle className="mdl-card__title_e_commerce" style={{ color: '#fff', height: '176px', background: 'url(https://s3-us-west-2.amazonaws.com/devcodepro/media/blog/como-funciona-reactjs.png) center / cover' }}></CardTitle>
                         <CardText><h4 style={{color:'#da7c18', fontFamily: 'Roboto Mono,monospace'}}>E-COMMERCE STORE</h4> My first e-commerce site following an online course. <br></br>Built with React js.
@@ -151,19 +136,21 @@ class Project extends Component {
                             
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
-                        <IconButton name ="photo"style={{color: '#da7c18'}}onClick={this.handleOpenDialogTesi} raised ripple>Show Dialog</IconButton>
-                        <Dialog id="dialog4" className="modal" open={this.state.openDialogTesi}>
-                          
-                            <img className="img_modal" src={img3} alt="tesi" height="400px" width="570px"/>
-                          
-                          <DialogActions>
-                            
-                            <Button type='button' onClick={this.handleCloseDialogTesi}>BACK</Button>
-                          </DialogActions>
-                        </Dialog>
+                        <IconButton name ="photo"style={{color: '#da7c18'}}onClick={this.handleShowDialogTesi} raised ripple>Show Dialog</IconButton>
+                       
                    
                         </CardMenu>
                     </Card>
+                    {this.state.openDialogTesi && (
+                        <dialog
+                          className="modal"
+                          
+                          open
+                          onClick={this.handleShowDialogTesi}
+                        >
+                        <img  src={img3} alt="tesi" height="370px" width="480px"  onClick={this.handleShowDialogTesi}/>
+                        </dialog>
+                      )}
 
 
 
@@ -184,6 +171,7 @@ class Project extends Component {
 
                 </Tabs>
                 <section>
+     
                     <Grid >
                         <Cell col={12} >
                             <div className="content">{this.toggleCategories()}</div>
