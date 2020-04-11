@@ -1,12 +1,34 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton} from 'react-mdl';
-import img from './triporate.png'
+import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton, Dialog, DialogContent,DialogActions} from 'react-mdl';
+import img1 from '../components/ntt_data.png';
+import img_triporate from '../components/triporate.png';
+import img3 from '../components/tesi.png';
 
 class Project extends Component {
     constructor(props) {
         super(props);
-        this.state = { activeTab: 0}
+        this.state = { 
+           
+
+            activeTab: 0}
+        
+    this.handleOpenDialog = this.handleOpenDialog.bind(this);
+    this.handleCloseDialog = this.handleCloseDialog.bind(this);
+ 
     }
+    
+    
+    handleOpenDialog() {
+        this.setState({
+          openDialog: true
+        });
+      }
+    
+      handleCloseDialog() {
+        this.setState({
+          openDialog: false
+        });
+      }
     
     toggleCategories() {
         if (this.state.activeTab === 0) {
@@ -21,7 +43,17 @@ class Project extends Component {
                             
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
-                            <IconButton name="share" onClick={() => window.open('https://www.Linkedin.com', "_blank")}style={{color: '#da7c18'}}/>
+                        
+                        <IconButton name ="photo"style={{color: '#da7c18'}}onClick={this.handleOpenDialog} raised ripple>Show Dialog</IconButton>
+                        <Dialog className="modal" open={this.state.openDialog}>
+                          
+                            <img src={img1} alt="ntt data" height="370px" width="480px"/>
+                          
+                          <DialogActions>
+                        <Button type='button' onClick={this.handleCloseDialog}>BACK</Button>
+                          </DialogActions>
+                        </Dialog>
+                    
                         </CardMenu>
                     </Card>
 
@@ -34,20 +66,39 @@ class Project extends Component {
                             
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
-                            <IconButton name="share"onClick={() => window.open('https://www.Linkedin.com', "_blank")}style={{color: '#da7c18'}}/>
+                        <IconButton name ="photo"style={{color: '#da7c18'}}onClick={this.handleOpenDialog} raised ripple>Show Dialog</IconButton>
+                        <Dialog className="modal" open={this.state.openDialog}>
+                          <DialogContent>
+                            <img  src={img_triporate} alt="triporate" height="370px" width="480px"/>
+                          
+                          <DialogActions>
+                            
+                            <Button type='button' onClick={()=>this.handleCloseDialog}>BACK</Button>
+                          </DialogActions>
+                          </DialogContent>
+                        </Dialog>
                         </CardMenu>
                     </Card>
 
                     <Card shadow={5}>
                         <CardTitle className="mdl-card__title_e_commerce" style={{ color: '#fff', height: '176px', background: 'url(https://s3-us-west-2.amazonaws.com/devcodepro/media/blog/como-funciona-reactjs.png) center / cover' }}></CardTitle>
                         <CardText><h4 style={{color:'#da7c18', fontFamily: 'Roboto Mono,monospace'}}>E-COMMERCE STORE</h4> My first e-commerce site following an online course. <br></br>Built with React js.
-                        You can find it <a href="https://react-site-online.netlify.com"> here</a> </CardText>
+                        You can find it <a style={{color:'#da7c18'}} href="https://react-site-online.netlify.com"> here</a> </CardText>
                         <CardActions style={{backgroundColor:'  #da7c18'}}>
                             <Button style={{color:'  10px solid black'}} onClick={() => window.open('https://github.com/nicomontale/MontaleoneNicola', "_blank")}>GitHub</Button>
                             
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }} >
-                            <IconButton name="share" onClick={() => window.open('https://www.Linkedin.com', "_blank")}style={{color: '#da7c18'}}/>
+                        <IconButton name ="photo"style={{color: '#da7c18'}}onClick={this.handleOpenDialog} raised ripple>Show Dialog</IconButton>
+                        <Dialog className="modal" open={this.state.openDialog}>
+                          
+                            <img className="img_modal" src={img_triporate} alt="e_commerce" height="370px" width="480px"/>
+                          
+                          <DialogActions>
+                            
+                            <Button type='button' onClick={this.handleCloseDialog}>BACK</Button>
+                          </DialogActions>
+                        </Dialog>
                         </CardMenu>
                     </Card>
 
@@ -64,7 +115,7 @@ class Project extends Component {
             return (
                 <div className="projects-grid">
                     <Card shadow={5} style={{ minWidth: '450', margin: 'auto'}}>
-                        <CardTitle className="mdl-card__title_tesi"  style={{ color: 'black', height: '306px', backgroundImage: 'url('+{img}+') center / cover' }}></CardTitle>
+                        <CardTitle className="mdl-card__title_tesi"  style={{ color: 'black', height: '306px', backgroundImage: 'url() center / cover' }}></CardTitle>
                         <CardText ><h4 style={{color:'#da7c18', fontFamily: 'Roboto Mono,monospace'}}>THESIS:COMPANY MANAGEMENT</h4>
                         The application allows you to provide a timely analysis regarding the work of the technician throughout 2018, in particular starting from accounting data, it will be possible to derive values ​​aimed at capturing the critical and optimal factors of the technicians and then carrying out training team. </CardText>
                         <CardActions style={{backgroundColor:'  #da7c18'}}>
@@ -73,8 +124,17 @@ class Project extends Component {
                             
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
-                            <IconButton name="share"  onClick={() => window.open('https://www.Linkedin.com', "_blank")}style={{color: '#da7c18'}}>
-                   </IconButton>
+                        <IconButton name ="photo"style={{color: '#da7c18'}}onClick={this.handleOpenDialog} raised ripple>Show Dialog</IconButton>
+                        <Dialog className="modal" open={this.state.openDialog}>
+                          
+                            <img className="img_modal" src={img3} alt="tesi" height="400px" width="570px"/>
+                          
+                          <DialogActions>
+                            
+                            <Button type='button' onClick={this.handleCloseDialog}>BACK</Button>
+                          </DialogActions>
+                        </Dialog>
+                   
                         </CardMenu>
                     </Card>
 
