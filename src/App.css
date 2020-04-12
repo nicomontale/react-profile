@@ -350,7 +350,7 @@ cursor:pointer;
   float:none;
   margin: auto;
 }
-.mdl-button_ripple-container{
+.mdl-button{
   cursor: pointer;
 }
 
