@@ -212,6 +212,7 @@ background-position: 0 0;
 -moz-background-size: cover;
 -webkit-background-size: cover;
 background-size: cover; 
+cursor:pointer;
 
 }
 .mdl-card__title_triporate {
@@ -221,6 +222,7 @@ background-position: 0 0;
 -moz-background-size: cover;
 -webkit-background-size: cover;
 background-size: cover; 
+cursor:pointer;
 
 }
 .mdl-card__title_e_commerce {
@@ -230,6 +232,7 @@ background-position: 0 0;
 -moz-background-size: cover;
 -webkit-background-size: cover;
 background-size: cover; 
+
 
 }
 
@@ -241,6 +244,7 @@ background-position: 0 0;
 -moz-background-size: cover;
 -webkit-background-size: cover;
 background-size: cover; 
+cursor:pointer;
 
 }
 
