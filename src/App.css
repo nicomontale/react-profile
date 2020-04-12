@@ -115,6 +115,10 @@
     margin-bottom: 20px;
     min-width: 450;
   }
+  .body {
+    cursor: pointer;
+    cursor: text;
+  }
 }
 
 
@@ -338,11 +342,18 @@ cursor:pointer;
   position: fixed;
   left: 50%;
   top: 50%;
+  right: 50%;
   transform: translate(-50%, -50%);
  
 }
 .clickable {
   cursor:pointer;
 }
+.mdl-progress_div {
+  float:none;
+  margin: auto;
+}
+
+
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */

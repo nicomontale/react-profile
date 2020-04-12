@@ -5,9 +5,9 @@ import {Grid, Cell, ProgressBar} from 'react-mdl';
 class Skills extends Component {
     render() {
         return(
-            <Grid className="mdl-progress_div">
-            <Cell col={12}>
-            <div className="meter"  style= {{display: 'flex'}}>{this.props.Skills} <ProgressBar  style= {{margin: 'auto', width: '55%', color: 'red'
+            <Grid >
+            <Cell tyle={{ margin:'auto'}} col={12}>
+            <div className="meter" >{this.props.Skills} <ProgressBar  style= {{ width: '85%', color: 'red'
            }}  progress={this.props.progress}/></div>
             </Cell>
             </Grid>
