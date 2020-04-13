@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton} from 'react-mdl';
 import img1 from '../components/ntt_data.png';
 import img_triporate from '../components/triporate.png';
+import Tappable from 'react-tappable/lib/Tappable';
 import img3 from '../components/tesi.png';
+
 
 
 class Project extends Component {
@@ -52,7 +54,7 @@ class Project extends Component {
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
                        
-                        <IconButton  className="clickable" name ="photo" style={{color: '#da7c18',  width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}} onPress={this.handleShowDialogNTT} raised ripple/>
+                       <Tappable onTap={this.handleShowDialogNTT}><IconButton  className="clickable" name ="photo" style={{color: '#da7c18',  width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}} /></Tappable> 
                       
 
                           
