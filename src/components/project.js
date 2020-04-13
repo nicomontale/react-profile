@@ -11,9 +11,7 @@ class Project extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            openDialogNTT:false,
-            openDialogTrip: false,
-            openDialogTesi: false,
+            
 
            
 
