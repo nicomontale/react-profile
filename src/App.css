@@ -335,13 +335,13 @@ background-size: cover;
   -moz-box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
   box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
   z-index: 9999;
-  position: fixed;
+  position: relative;
   max-width: 100%;
   left: 50%;
   top: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
-  -webkit-transform: translate3d(0,50,50);
+  
  
 }
 
