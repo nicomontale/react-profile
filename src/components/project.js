@@ -43,7 +43,7 @@ class Project extends Component {
             return (
                 <div className="projects-grid"  >
                     <Card shadow={5} >
-                        <CardTitle onClick={this.handleShowDialogNTT} className="mdl-card__title_ntt" style={{ color: 'fff', height: '176px', cursor:'pointer' }}></CardTitle>
+                        <CardTitle className="mdl-card__title_ntt" style={{ color: 'fff', height: '176px', cursor:'pointer' }}></CardTitle>
                         <CardText><h4 style={{color:'#da7c18',fontFamily: 'Roboto Mono,monospace'}}>NTT DATA</h4>Me and my companios had the opporunity to work with NTT DATA 
                         increasing an application for a prestigious client company.</CardText>
                         <CardActions style={{backgroundColor:'  #da7c18'}}>
@@ -52,7 +52,7 @@ class Project extends Component {
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
                         
-                        <IconButton href="#" data-toggle="modal" data-target="#testModal" name ="photo" style={{color: '#da7c18',  width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}} onClick={this.handleShowDialogNTT} raised ripple/>
+                        <IconButton className="clickable" data-toggle="modal" data-target="#testModal" name ="photo" style={{color: '#da7c18',  width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}} onClick={this.handleShowDialogNTT} raised ripple/>
                        
                           
                            
@@ -75,14 +75,14 @@ class Project extends Component {
 
 
                     <Card shadow={5} >
-                        <CardTitle onClick={this.handleShowDialogTrip} className="mdl-card__title_triporate" style={{ color: '#fff', height: '176px', cursor:'pointer'}}></CardTitle>
+                        <CardTitle  className="mdl-card__title_triporate" style={{ color: '#fff', height: '176px', cursor:'pointer'}}></CardTitle>
                         <CardText><h4 style={{color:'#da7c18',fontFamily: 'Roboto Mono,monospace'}}>TRIPORATE</h4>Triporate is a company that searches to simplify work-related traveling, providing a full service of ticket and accommodation purchase. This project is a multiplatform solution for the viewing of plane, train and bus tickets, giving the user the possibility of having all of his boarding passes in one digital Wallet, without the need of downloading additional apps or files.  </CardText>
                         <CardActions style={{backgroundColor:'  #da7c18'}}>
                             <Button style={{color:'  10px solid black'}} onClick={() => window.open('https://github.com/nicomontale/ProjectTriporateEnd', "_blank")}>GitHub</Button>
                             
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
-                        <IconButton href="#" data-toggle="modal" data-target="#testModal" name ="photo" style={{color: '#da7c18',  width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}} onClick={this.handleShowDialogTrip} raised ripple/>
+                        <IconButton  className="clickable" data-target="#testModal" name ="photo" style={{color: '#da7c18',  width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}} onClick={this.handleShowDialogTrip} raised ripple/>
                         
                           
                            
@@ -110,7 +110,7 @@ class Project extends Component {
                             
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }} >
-                        <IconButton name ="photo"style={{color: '#da7c18', width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}}/>
+                        <IconButton className="clickable" name ="photo"style={{color: '#da7c18', width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}}/>
                         
                         </CardMenu>
                     </Card>
@@ -128,7 +128,7 @@ class Project extends Component {
             return (
                 <div className="projects-grid">
                     <Card shadow={5} style={{ minWidth: '450', margin: 'auto'}}>
-                        <CardTitle onClick={this.handleShowDialogTesi} className="mdl-card__title_tesi"  style={{ height: '306px',cursor:'pointer'}}></CardTitle>
+                        <CardTitle  className="mdl-card__title_tesi"  style={{ height: '306px',cursor:'pointer'}}></CardTitle>
                         <CardText ><h4 style={{color:'#da7c18', fontFamily: 'Roboto Mono,monospace'}}>THESIS:COMPANY MANAGEMENT</h4>
                         The application allows you to provide a timely analysis regarding the work of the technician throughout 2018, in particular starting from accounting data, it will be possible to derive values ​​aimed at capturing the critical and optimal factors of the technicians and then carrying out training team. </CardText>
                         <CardActions style={{backgroundColor:'  #da7c18'}}>
@@ -137,7 +137,7 @@ class Project extends Component {
                             
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
-                        <IconButton name ="photo"  style={{color: '#da7c18', width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}}onClick={this.handleShowDialogTesi} raised ripple/>
+                        <IconButton className="clickable" name ="photo"  style={{color: '#da7c18', width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}}onClick={this.handleShowDialogTesi} raised ripple/>
                        
                    
                         </CardMenu>
