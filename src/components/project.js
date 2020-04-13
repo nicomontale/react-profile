@@ -63,6 +63,7 @@ class Project extends Component {
                     
                         </CardMenu>
                     </Card>
+                    
                     {this.state.openDialogNTT && (
                         <dialog open
                           className="modal"
