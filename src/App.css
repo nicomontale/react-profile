@@ -340,7 +340,9 @@ background-size: cover;
   left: 50%;
   top: 50%;
   right: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate3d(-50%,-50%,0);
+  -webkit-overflow-scrolling:touch;
+
   
  
 }
