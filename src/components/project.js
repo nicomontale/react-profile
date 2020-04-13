@@ -52,7 +52,7 @@ class Project extends Component {
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
                         
-                        <IconButton name ="photo" style={{color: '#da7c18',  width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}} onClick={this.handleShowDialogNTT} raised ripple/>
+                        <IconButton href="#" data-toggle="modal" data-target="#testModal" name ="photo" style={{color: '#da7c18',  width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}} onClick={this.handleShowDialogNTT} raised ripple/>
                        
                           
                            
@@ -82,7 +82,7 @@ class Project extends Component {
                             
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
-                        <IconButton name ="photo" style={{color: '#da7c18',  width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}} onClick={this.handleShowDialogTrip} raised ripple/>
+                        <IconButton href="#" data-toggle="modal" data-target="#testModal" name ="photo" style={{color: '#da7c18',  width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}} onClick={this.handleShowDialogTrip} raised ripple/>
                         
                           
                            
