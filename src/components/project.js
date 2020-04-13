@@ -40,7 +40,7 @@ class Project extends Component {
       };
     
     
-    toggleCategories() {
+    toggleCategories=()=> {
         if (this.state.activeTab === 0) {
             return (
                 <div className="projects-grid"  >
