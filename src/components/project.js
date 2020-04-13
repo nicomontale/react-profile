@@ -128,7 +128,7 @@ class Project extends Component {
             return (
                 <div className="projects-grid">
                     <Card shadow={5} style={{ minWidth: '450', margin: 'auto'}}>
-                        <CardTitle onClick={this.handleShowDialogTesi} className="mdl-card__title_tesi"  style={{ color: 'black', height: '306px',cursor:'pointer'}}></CardTitle>
+                        <CardTitle onClick={this.handleShowDialogTesi} className="mdl-card__title_tesi"  style={{ height: '306px',cursor:'pointer'}}></CardTitle>
                         <CardText ><h4 style={{color:'#da7c18', fontFamily: 'Roboto Mono,monospace'}}>THESIS:COMPANY MANAGEMENT</h4>
                         The application allows you to provide a timely analysis regarding the work of the technician throughout 2018, in particular starting from accounting data, it will be possible to derive values ​​aimed at capturing the critical and optimal factors of the technicians and then carrying out training team. </CardText>
                         <CardActions style={{backgroundColor:'  #da7c18'}}>
