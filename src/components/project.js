@@ -52,10 +52,7 @@ class Project extends Component {
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
                         
-                       
-                        
-                        <a href="#" data-toggle="modal" data-target="#testModal"> <IconButton  name ="photo" style={{color: '#da7c18',  width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}} onClick={this.handleShowDialogNTT} raised ripple/></a>
-                        
+                        <IconButton href="#" data-toggle="modal" data-target="#testModal" name ="photo" style={{color: '#da7c18',  width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}} onClick={this.handleShowDialogNTT} raised ripple/>
                        
                           
                            
