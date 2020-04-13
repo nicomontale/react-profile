@@ -52,7 +52,7 @@ class Project extends Component {
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
                        
-                       <Tappable onTap={this.handleShowDialogNTT}><IconButton  className="clickable" name ="photo" style={{color: '#da7c18',  width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}} /></Tappable> 
+                       <Tappable onTap={this.handleShowDialogNTT} style={{cursor:'pointer'}}><IconButton  className="clickable" name ="photo" style={{color: '#da7c18',  width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}} /></Tappable> 
                       
 
                           
