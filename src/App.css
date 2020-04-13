@@ -113,7 +113,7 @@
   .mdl-card { 
     margin-top: 20px;  
     margin-bottom: 20px;
-    min-width: 450;
+    min-width: 550;
   }
   
 }
@@ -334,9 +334,8 @@ background-size: cover;
   -webkit-box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
   -moz-box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
   box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
-  z-index: 50;
+  z-index: 200;
   max-width: 100%;
-  position: fixed;
   left: 50%;
   top: 50%;
   right: 50%;
