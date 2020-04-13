@@ -335,7 +335,7 @@ background-size: cover;
   -moz-box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
   box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
   z-index: 9999;
-  position: relative;
+  position: fixed;
   max-width: 100%;
   left: 50%;
   top: 50%;
