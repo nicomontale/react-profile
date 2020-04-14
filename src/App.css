@@ -327,7 +327,11 @@ background-size: cover;
 }
 
 .modal {
-  
+  position: fixed; 
+  display: block;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   
   overflow-x: scroll;
   background-color:#f58003;
@@ -335,18 +339,20 @@ background-size: cover;
   -webkit-box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
   -moz-box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
   box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
-  z-index: 2;
+  z-index: 9999;
   
-  
+  -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   max-width: 70%;
   left: 50%;
   top: 50%;
   right: 60%;
   
-  transform: translate3d(-50%,-50%,0);
+  
   -webkit-overflow-scrolling:auto;
-   
- position: fixed front; 
+  text-align: center;
+ 
 
   
  
