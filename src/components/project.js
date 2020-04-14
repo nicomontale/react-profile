@@ -125,7 +125,7 @@ class Project extends Component {
                             
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
-                        <IconButton  className="clickable"  name ="photo" style={{color: '#da7c18',  width: '58px', height: '58px', minWidth:'initial', cursor:'pointer', zIndex:'11'}} onClick={this.handleShowDialogTrip} raised ripple/>
+                        <IconButton  className="clickable"  name ="photo" style={{color: '#da7c18',  width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}} onClick={this.handleShowDialogTrip} raised ripple/>
                         
                           
                            
