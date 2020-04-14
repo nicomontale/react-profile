@@ -11,6 +11,9 @@ class Project extends Component {
     constructor(props) {
         super(props);
         this.state = { 
+            openDialogNTT:false,
+            openDialogTrip:false,
+            openDialogTesi: false,
             
 
            
@@ -20,7 +23,54 @@ class Project extends Component {
     
  
     }
-    
+    showDialog = (openDialogNTT,openDialogTrip,openDialogTesi) =>{
+        if(openDialogNTT===true && openDialogTrip===false && openDialogTesi===false) {
+            return(
+            (
+                <dialog open
+                  className="modal"
+                  
+                 
+                  onClick={this.handleShowDialogNTT}
+                >
+                <img src={img1} alt="ntt data" height="370px" width="480px" onClick={this.handleShowDialogNTT}/>
+                </dialog>
+              )
+            )
+
+        } else if(openDialogNTT===false && openDialogTrip===true && openDialogTesi===false) {
+            return (
+                (
+                    <dialog
+                    open
+                      className="modal"
+                      
+                      
+                      onClick={this.handleShowDialogTrip}
+                    >
+                    <img  src={img_triporate} alt="triporate" height="370px" width="480px"  onClick={this.handleShowDialogTrip}/>
+                    </dialog>
+                  )
+
+            )
+
+        } else if(openDialogNTT===false && openDialogTrip===false && openDialogTesi===true) {
+            return(
+                (
+                    <dialog
+                    open
+                      className="modal"
+                      
+                      
+                      onClick={this.handleShowDialogTesi}
+                    >
+                    <img  src={img3} alt="triporate" height="370px" width="480px"  onClick={this.handleShowDialogTesi}/>
+                    </dialog>
+                  )
+            )
+
+        }
+    }
     
     
       handleShowDialogNTT = () => {
@@ -64,16 +114,7 @@ class Project extends Component {
                         </CardMenu>
                     </Card>
                     
-                    {this.state.openDialogNTT && (
-                        <dialog open
-                          className="modal"
-                          
-                         
-                          onClick={this.handleShowDialogNTT}
-                        >
-                        <img src={img1} alt="ntt data" height="370px" width="480px" onClick={this.handleShowDialogNTT}/>
-                        </dialog>
-                      )}
+                    
 
 
                     <Card shadow={5} >
@@ -92,17 +133,7 @@ class Project extends Component {
                           
                         </CardMenu>
                     </Card>
-                    {this.state.openDialogTrip && (
-                        <dialog
-                        open
-                          className="modal"
-                          
-                          
-                          onClick={this.handleShowDialogTrip}
-                        >
-                        <img  src={img_triporate} alt="triporate" height="370px" width="480px"  onClick={this.handleShowDialogTrip}/>
-                        </dialog>
-                      )}
+                    
                     <Card shadow={5}>
                         <CardTitle className="mdl-card__title_e_commerce" style={{ color: '#fff', height: '176px', background: 'url(https://s3-us-west-2.amazonaws.com/devcodepro/media/blog/como-funciona-reactjs.png) center / cover' }}></CardTitle>
                         <CardText><h4 style={{color:'#da7c18', fontFamily: 'Roboto Mono,monospace'}}>E-COMMERCE STORE</h4> My first e-commerce site following an online course. <br></br>Built with React js.
@@ -144,17 +175,7 @@ class Project extends Component {
                    
                         </CardMenu>
                     </Card>
-                    {this.state.openDialogTesi && (
-                        <dialog
-                        open
-                          className="modal"
-                          
-                          
-                          onClick={this.handleShowDialogTesi}
-                        >
-                        <img  src={img3} alt="tesi" height="370px" width="480px"  onClick={this.handleShowDialogTesi}/>
-                        </dialog>
-                      )}
+                    
 
 
 
@@ -165,6 +186,7 @@ class Project extends Component {
     }
 
     render() {
+        const {openDialogNTT,openDialogTesi,openDialogTrip}= this.state;
         return (
             <div className="category-tabs"  >
                 <Tabs  activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple >
@@ -174,6 +196,7 @@ class Project extends Component {
 
 
                 </Tabs>
+                {this.showDialog(openDialogNTT,openDialogTrip,openDialogTesi)}
                 <section>
      
                     <Grid >
