@@ -336,7 +336,7 @@ background-size: cover;
   -moz-box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
   box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
   z-index: 2;
-  position: fixed;
+  
   
   max-width: 70%;
   left: 50%;
@@ -345,7 +345,8 @@ background-size: cover;
   
   transform: translate3d(-50%,-50%,0);
   -webkit-overflow-scrolling:auto;
-  
+   
+ position: fixed front; 
 
   
  
