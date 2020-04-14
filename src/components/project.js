@@ -124,7 +124,7 @@ class Project extends Component {
                             <Button style={{color:'  10px solid black'}} onClick={() => window.open('https://github.com/nicomontale/ProjectTriporateEnd', "_blank")}>GitHub</Button>
                             
                         </CardActions>
-                        <CardMenu style={{ color: '#fff' }}>
+                        <CardMenu style={{ color: '#ffff' }}>
                        <Tappable onTap={this.handleShowDialogTrip}><IconButton  className="clickable"  name ="photo" style={{color: '#da7c18',  minWidth:'initial', cursor:'pointer'}} /></Tappable> 
                         
                           
