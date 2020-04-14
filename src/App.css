@@ -328,21 +328,21 @@ background-size: cover;
 
 .modal {
   
-  max-height: calc(100vh - 210px);
-  overflow-x: auto;
+  
+  overflow-x: scroll;
   background-color:#f58003;
   border-radius:20px; 
   -webkit-box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
   -moz-box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
   box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
-  z-index: 10;
+  z-index: 2;
   position: fixed;
-  float: center;
-  max-width: 100%;
+  
+  max-width: 70%;
   left: 50%;
   top: 50%;
-  right: 50%;
-  bottom: 50%;
+  right: 60%;
+  
   transform: translate3d(-50%,-50%,0);
   -webkit-overflow-scrolling:auto;
   
