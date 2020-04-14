@@ -334,14 +334,14 @@ background-size: cover;
   -webkit-box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
   -moz-box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
   box-shadow: 17px -7px 5px -10px rgba(0,0,0,0.62);
-  z-index: 9999;
+  z-index: 10;
   position: fixed;
   max-width: 100%;
   left: 50%;
   top: 50%;
   right: 50%;
   transform: translate3d(-50%,-50%,0);
-  -webkit-overflow-scrolling:touch;
+  -webkit-overflow-scrolling:auto;
 
   
  
