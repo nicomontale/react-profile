@@ -306,6 +306,19 @@ background-size: cover;
 
     height: 10px;
   }
+  
+.mdl-progress > .bufferbar {
+  background-image: linear-gradient(to right, rgba(255,255,255, 0.7), rgba(255,255,255, 0.7)), linear-gradient(to right,rgb(147, 76, 1), rgb(147, 76, 1))  !important;
+}
+
+.mdl-progress > .auxbar {
+  background-image: linear-gradient(to right, rgba(255,255,255, 0.9), rgba(255,255,255, 0.9)), linear-gradient(to right, rgb(147, 76, 1),rgb(147, 76, 1))  !important;
+}
+
+.mdl-progress > .progressbar {
+  background-color: rgb(147, 76, 1) !important;
+}
+  
   .meter { 
     height: 20px;  /* Can be anything */
     margin: auto;
@@ -365,9 +378,13 @@ background-size: cover;
 
 .mdl-button {
   cursor: pointer;
+  
+  
 }
 .mdl-button i {
-  font-size: 1.8em;
+text-align: center;
+font-size: 3rem;
+
 }
 .clickable{
   cursor: pointer;
@@ -380,9 +397,11 @@ background-size: cover;
 }
 .mdl-button__ripple-container{
   cursor: pointer;
+ 
   
 }
 .mdl-ripple{
 cursor: pointer;
+
 }
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */

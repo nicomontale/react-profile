@@ -7,7 +7,7 @@ class Skills extends Component {
         return(
             <Grid >
             <Cell tyle={{ margin:'auto'}} col={12}>
-            <div className="meter" >{this.props.Skills} <ProgressBar  style= {{ width: '85%', color: 'red'
+            <div className="meter" >{this.props.Skills} <ProgressBar  style= {{ width: '100%'
            }}  progress={this.props.progress}/></div>
             </Cell>
             </Grid>

@@ -22,16 +22,14 @@ class Resume extends Component {
         <hr style={{borderTop: '4px solid black', width: '50%'}}   />
         <p>Highly reliable and passionate junior developer with a solid work ethics. Sport is one of my worth-mentioning strengths: I enjoy playing both basketball and soccer during my free time. I am deeply motivated, and hold great sense of initiative. Travelling is one thing I would never give up on: discovering something new every day is what makes me willing to improve myself and tirelessly push my boundaries! </p>
         <hr style={{borderTop: '4px solid black', width: '45%'}}   />
-        <h5>Address</h5>
+        <h5 style={{paddingTop: '1em', fontFamily: 'Roboto Mono,monospace'}}>Address</h5>
         <p>Via Ozieri, 17</p>
         <p>Turin, IT</p>
-        <h5>Phone</h5>
-        <p>+39 3409158662</p>
-        <h5>Email</h5>
+        <h5 style={{paddingTop: '1em',fontFamily: 'Roboto Mono,monospace'}}>Email</h5>
         <p><a style={{ color: "black"}} href="mailto:nicola.montaleone95@gmail.com" target="_top">Email: nicola.montaleone95@gmail.com</a></p>
         </Cell>
         <Cell col={8} className="resume-right-col">
-        <h2 style={{fontFamily: 'Roboto Mono,monospace' }}>Education</h2>
+        <h2 style={{ paddingTop: '1em', fontFamily: 'Roboto Mono,monospace' }}>Education</h2>
         <Education 
         startYear= {2020}
         
@@ -41,7 +39,7 @@ class Resume extends Component {
         startYear= {2019}
         endYear={2020}
         schoolName="Talent Garden Innovation School"
-        schoolDescription="During the master I was able to deepen my knowledge in React." />
+        schoolDescription="Frontend Master (React)" />
         
 
         <Education 
