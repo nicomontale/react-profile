@@ -86,20 +86,33 @@ class Project extends Component {
         this.setState({ openDialogTesi: !this.state.openDialogTesi });
         console.log('cliked');
       };
-    
+
+    setBooleanJava=()=> {
+         if(this.state.openDialogTesi===true) {
+            this.setState({openDialogTesi: false})
+        }
+    }
+    setBooleanReact=()=> {
+        if(this.state.openDialogNTT===true) {
+            this.setState({openDialogNTT: false})
+        } if(this.state.openDialogTrip===true) {
+            this.setState({openDialogTrip: false})
+        } 
+    }
     
     toggleCategories=()=> {
         if (this.state.activeTab === 0) {
+            this.setBooleanJava();
             return (
                 <div className="projects-grid"  >
                     <Card shadow={5} >
-                       <Tappable onTap={this.handleShowDialogNTT} style={{cursor:'pointer'}}><CardTitle className="mdl-card__title_ntt" style={{ color: 'fff', height: '176px', cursor:'pointer' }}></CardTitle></Tappable> 
+                       <Tappable onTap={this.handleShowDialogNTT} style={{cursor:'pointer'}}><CardTitle className="mdl-card__title_ntt" style={{ color: 'rgb(33, 33, 40)', height: '176px', cursor:'pointer' }}></CardTitle></Tappable> 
                         <CardText><h4 style={{color:'#da7c18',fontFamily: 'Roboto Mono,monospace'}}>NTT DATA</h4>Me and my companios had the opporunity to work with NTT DATA 
                         increasing an application for a prestigious client company.</CardText>
-                        <CardActions style={{backgroundColor:'  #da7c18'}}>
-                            <Button style={{color:'  10px solid black'}} onClick={() => window.open('https://github.com/nicomontale/leroyMerlin-wizard', "_blank")}>GitHub</Button>
+                        <Tappable onTap={() => window.open('https://github.com/nicomontale/leroyMerlin-wizard', "_blank")}>   <CardActions style={{backgroundColor:'  #da7c18'}}>
+                            <Button style={{color:'  10px solid black'}}>GitHub</Button>
                             
-                        </CardActions>
+                        </CardActions></Tappable>
                         <CardMenu style={{ color: '#fff' }}>
                        
                        <Tappable onTap={this.handleShowDialogNTT} style={{cursor:'pointer'}}><IconButton  className="clickable" name ="photo" style={{color: '#da7c18',  width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}} /></Tappable> 
@@ -118,12 +131,12 @@ class Project extends Component {
 
 
                     <Card shadow={5} >
-                       <Tappable onTap={this.handleShowDialogTrip} style={{cursor:'pointer'}}><CardTitle  className="mdl-card__title_triporate" style={{ color: '#fff', height: '176px', cursor:'pointer'}}></CardTitle></Tappable> 
+                       <Tappable onTap={this.handleShowDialogTrip} style={{cursor:'pointer'}}><CardTitle  className="mdl-card__title_triporate" style={{ color: 'rgb(33, 33, 40)', height: '176px', cursor:'pointer'}}></CardTitle></Tappable> 
                         <CardText><h4 style={{color:'#da7c18',fontFamily: 'Roboto Mono,monospace'}}>TRIPORATE</h4>Triporate is a company that searches to simplify work-related traveling, providing a full service of ticket and accommodation purchase. This project is a multiplatform solution for the viewing of plane, train and bus tickets, giving the user the possibility of having all of his boarding passes in one digital Wallet, without the need of downloading additional apps or files.  </CardText>
-                        <CardActions style={{backgroundColor:'  #da7c18'}}>
-                            <Button style={{color:'  10px solid black'}} onClick={() => window.open('https://github.com/nicomontale/ProjectTriporateEnd', "_blank")}>GitHub</Button>
+                        <Tappable onTap={() => window.open('https://github.com/nicomontale/ProjectTriporateEnd', "_blank")}>   <CardActions style={{backgroundColor:'  #da7c18'}}>
+                            <Button style={{color:'  10px solid black'}}>GitHub</Button>
                             
-                        </CardActions>
+                        </CardActions></Tappable>
                         <CardMenu style={{ color: '#fff' }}>
                         <Tappable onTap={this.handleShowDialogTrip} style={{cursor:'pointer'}}><IconButton  className="clickable"  name ="photo" style={{color: '#da7c18',  width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}} /></Tappable> 
                         
@@ -138,10 +151,10 @@ class Project extends Component {
                         <CardTitle className="mdl-card__title_e_commerce" style={{ color: '#fff', height: '176px', background: 'url(https://s3-us-west-2.amazonaws.com/devcodepro/media/blog/como-funciona-reactjs.png) center / cover' }}></CardTitle>
                         <CardText><h4 style={{color:'#da7c18', fontFamily: 'Roboto Mono,monospace'}}>E-COMMERCE STORE</h4> My first e-commerce site following an online course. <br></br>Built with React js.
                         You can find it <a style={{color:'#da7c18'}} href="https://react-site-online.netlify.com"> here</a> </CardText>
-                        <CardActions style={{backgroundColor:'  #da7c18'}}>
-                            <Button style={{color:'  10px solid black'}} onClick={() => window.open('https://github.com/nicomontale/MontaleoneNicola', "_blank")}>GitHub</Button>
+                     <Tappable onTap={() => window.open('https://github.com/nicomontale/roxas.nm-gmail.com', "_blank")}>   <CardActions style={{backgroundColor:'  #da7c18'}}>
+                            <Button style={{color:'  10px solid black'}}>GitHub</Button>
                             
-                        </CardActions>
+                        </CardActions></Tappable>
                         <CardMenu style={{ color: '#fff' }} >
                         <IconButton className="clickable" name ="photo"style={{color: '#da7c18', width: '58px', height: '58px', minWidth:'initial', cursor:'pointer'}}/>
                         
@@ -158,10 +171,11 @@ class Project extends Component {
 
             )
         } else if (this.state.activeTab === 1) {
+           this.setBooleanReact();
             return (
                 <div className="projects-grid">
                     <Card shadow={5} style={{ minWidth: '450', margin: 'auto'}}>
-                    <Tappable onTap={this.handleShowDialogTrip} style={{cursor:'pointer'}}><CardTitle  className="mdl-card__title_tesi"  style={{ height: '306px',cursor:'pointer'}}></CardTitle></Tappable>
+                    <Tappable onTap={this.handleShowDialogTrip} style={{cursor:'pointer'}}><CardTitle  className="mdl-card__title_tesi"  style={{color:'rgb(33, 33, 40)', height: '306px',cursor:'pointer'}}></CardTitle></Tappable>
                         <CardText ><h4 style={{color:'#da7c18', fontFamily: 'Roboto Mono,monospace'}}>THESIS:COMPANY MANAGEMENT</h4>
                         The application allows you to provide a timely analysis regarding the work of the technician throughout 2018, in particular starting from accounting data, it will be possible to derive values ​​aimed at capturing the critical and optimal factors of the technicians and then carrying out training team. </CardText>
                         <CardActions style={{backgroundColor:'  #da7c18'}}>
@@ -170,7 +184,7 @@ class Project extends Component {
                             
                         </CardActions>
                         <CardMenu style={{ color: '#fff' }}>
-                       <Tappable onTap={this.handleShowDialogTesi} style={{cursor:'pointer'}}><IconButton  className="clickable"  name ="photo" style={{color: '#da7c18', minWidth:'initial', cursor:'pointer'}} /> </Tappable>
+                       <Tappable onTap={this.handleShowDialogTesi} style={{cursor:'pointer'}}><IconButton  className="clickable"  name ="photo" style={{color: '#da7c18', width: '58px', height: '58px',minWidth:'initial', cursor:'pointer'}} /> </Tappable>
                        
                    
                         </CardMenu>

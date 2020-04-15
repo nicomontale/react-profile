@@ -344,7 +344,7 @@ background-size: cover;
   -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  max-width: 80%;
+  max-width: 100%;
   left: 50%;
   top: 50%;
   right: 60%;
@@ -366,16 +366,21 @@ background-size: cover;
 .mdl-button {
   cursor: pointer;
 }
-
+.mdl-button i {
+  font-size: 1.8em;
+}
 .clickable{
   cursor: pointer;
 }
 
 .material-icons {
   cursor: pointer;
+  
+  
 }
 .mdl-button__ripple-container{
   cursor: pointer;
+  
 }
 .mdl-ripple{
 cursor: pointer;
