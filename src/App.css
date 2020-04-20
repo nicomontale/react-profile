@@ -36,7 +36,7 @@ html, body {overflow-x: scroll;}
   left: 0;
   width: 100%;
   height: 100%;
-  min-height:100%;  overflow-x:hidden; 
+  min-height:100%;  overflow-x:hidden; display:block;
 }
 
 .avatar-image {
@@ -97,6 +97,8 @@ html, body {overflow-x: scroll;}
 
 .projects-grid {
   display: flex;
+ 
+
   
   
   
@@ -106,6 +108,12 @@ html, body {overflow-x: scroll;}
 .mdl-card{
   margin: auto;
   min-width: 450;
+}
+
+@media only screen and (max-width: 320px) {
+  .projects-grid {
+    overflow-y: scroll;
+  }
 }
 @media only screen and (max-width: 600px) {
   .projects-grid {
