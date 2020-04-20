@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 class LandingPage extends Component {
     render() {
         return (
-            <div style={{ width: '100%', margin: 'auto' }}>
+            <div style={{ width: '100%', margin: 'auto',minHeight: '100%', overflowX:'scroll'}}>
                 <Grid className="landing-grid">
                     <Cell col={12}>
                     <Link to="./resume"><img src={img1}
