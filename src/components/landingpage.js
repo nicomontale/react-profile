@@ -25,6 +25,10 @@ class LandingPage extends Component {
                                 <a href="https://github.com/nicomontale" rel="noopener noreferrer" target="_black">
                                     <i className="fa fa-github-square" aria-hidden="true" />
                                 </a>
+                                {/* Instagram */}
+                                <a href="https://www.instagram.com/nicola.montaleone/?hl=it" rel="noopener noreferrer" target="_black">
+                                    <i className="fa fa-instagram-square" aria-hidden="true" />
+                                </a>
                             </div>
                         </div>
                     </Cell>
