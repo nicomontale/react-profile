@@ -78,7 +78,12 @@ class Resume extends Component {
         <Skills
         Skills="REACT        "
         progress={65}
-        /> <Skills
+        /> 
+        <Skills
+        Skills="REACT NATIVE"
+        progress={60}
+        />
+        <Skills
         Skills="MySQL        "
         progress={75}
         /> <Skills
@@ -89,13 +94,14 @@ class Resume extends Component {
         Skills="VISUAL STUDIO"
         progress={60}
         /> 
+        
         <Skills
         Skills="BACK-END     "
         progress={60}
         /> 
         <Skills
         Skills="FRONT-END"
-        progress={50}
+        progress={60}
         /> 
         </Cell>
         
