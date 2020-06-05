@@ -149,15 +149,15 @@ class Project extends Component {
                     </Card>
 
                     <Card shadow={5}>
-                        <CardTitle className="mdl-card__title_e_commerce" style={{ color: '#fff', height: '176px', background: 'url(https://s3-us-west-2.amazonaws.com/devcodepro/media/blog/como-funciona-reactjs.png) center / cover' }}></CardTitle>
-                        <CardText><h4 style={{ color: '#da7c18', fontFamily: 'Roboto Mono,monospace' }}>E-COMMERCE STORE</h4> My first e-commerce site following an online course. <br></br>Built with React js.
-                        You can find it <a style={{ color: '#da7c18' }} href="https://react-site-online.netlify.com"> here</a> </CardText>
-                        <Tappable onTap={() => window.open('https://github.com/nicomontale/roxas.nm-gmail.com', "_blank")}>   <CardActions style={{ backgroundColor: '  #da7c18' }}>
+                        <CardTitle className="mdl-card__title_e_commerce" style={{ color: '#fff', height: '176px'}}></CardTitle>
+                        <CardText><h4 style={{ color: '#da7c18', fontFamily: 'Roboto Mono,monospace' }}>E-COMMERCE STORE</h4> Demo: e-commerce site for a skateshop.  <br></br>Built with React js.<br></br>
+                      Go to my Instagram account to see my frontend projects<a style={{ color: '#da7c18' }} href="https://www.instagram.com/nicola.montaleone/?hl=it"> here</a> </CardText>
+                        <Tappable onTap={() => window.open('https://github.com/nicomontale', "_blank")}>   <CardActions style={{ backgroundColor: '  #da7c18' }}>
                             <Button style={{ color: '  10px solid black' }}>GitHub</Button>
 
                         </CardActions></Tappable>
                         <CardMenu style={{ color: '#fff' }} >
-                           <a href="https://react-site-online.netlify.com"><IconButton className="clickable" name="shop" style={{ color: '#da7c18', width: '58px', height: '58px', minWidth: 'initial', cursor: 'pointer' }} /></a> 
+                           <a href=""><IconButton className="clickable" name="shop" style={{ color: '#da7c18', width: '58px', height: '58px', minWidth: 'initial', cursor: 'pointer' }} /></a> 
 
                         </CardMenu>
                     </Card>
