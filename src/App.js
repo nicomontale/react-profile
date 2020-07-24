@@ -37,7 +37,8 @@ class App extends React.Component{
         <Link  style={{textDecoration:'white', color:'white', fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/">HOME</Link>
         <Link style={{textDecoration:'white' ,fontSize:'20px', fontFamily: 'Roboto Mono,monospace' }} to="/project">PROJECTS</Link>
             <Link  style={{textDecoration:'white',fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/resume">RESUME</Link>
-           
+            <Link  style={{textDecoration:'white',fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/contact">CONTACT</Link>
+            <Link onClick={()=>document.querySelector('.mdl-layout__drawer').addEventListener('click', this.close())}  style={{textDecoration:'white', color:'black', fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/login">LOGIN</Link>
           
         </Navigation>
     </Header>
@@ -46,7 +47,8 @@ class App extends React.Component{
         <Link onClick={()=>document.querySelector('.mdl-layout__drawer').addEventListener('click', this.close())}  style={{textDecoration:'white', color:'black', fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/">HOME</Link>
         <Link onClick={()=>document.querySelector('.mdl-layout__drawer').addEventListener('click', this.close())}  style={{textDecoration:'white',color:'black', fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/project">PROJECTS</Link>
         <Link onClick={()=>document.querySelector('.mdl-layout__drawer').addEventListener('click', this.close())}  style={{textDecoration:'white', color:'black', fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/resume">RESUME</Link>
-        
+        <Link onClick={()=>document.querySelector('.mdl-layout__drawer').addEventListener('click', this.close())}  style={{textDecoration:'white', color:'black', fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/contact">CONTACT</Link>
+        <Link onClick={()=>document.querySelector('.mdl-layout__drawer').addEventListener('click', this.close())}  style={{textDecoration:'white', color:'black', fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/login">LOGIN</Link>
         
         </Navigation>
     </Drawer>
