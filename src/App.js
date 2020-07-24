@@ -35,18 +35,19 @@ class App extends React.Component{
     <Header className="header-color" title={<Link style={{textDecoration: 'none', color:'white', fontFamily: 'Roboto Mono,monospace'}} to="/">Nicola Montaleone</Link>} sroll>
         <Navigation>
         <Link  style={{textDecoration:'white', color:'white', fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/">HOME</Link>
-        <Link style={{textDecoration:'white' ,fontSize:'20px', fontFamily: 'Roboto Mono,monospace' }} to="/project">PROJECTS</Link>
             <Link  style={{textDecoration:'white',fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/resume">RESUME</Link>
+            <Link style={{textDecoration:'white' ,fontSize:'20px', fontFamily: 'Roboto Mono,monospace' }} to="/project">PROJECTS</Link>
             <Link  style={{textDecoration:'white',fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/contact">CONTACT</Link>
-            <Link onClick={()=>document.querySelector('.mdl-layout__drawer').addEventListener('click', this.close())}  style={{textDecoration:'white', color:'black', fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/login">LOGIN</Link>
+            <Link  style={{textDecoration:'white',fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/login">LOGIN</Link>
+          
           
         </Navigation>
     </Header>
     <Drawer  id="myNav" className="drawer-color" title={<h3 onClick={()=>document.querySelector('.mdl-layout__drawer').addEventListener('click', this.close()) && this.openNav() } style={{textDecoration: 'none', color:'black', fontFamily: 'Roboto Mono,monospace',fontSize:'15px'}} to="/">Nicola Montaleone</h3>} sroll>
         <Navigation className="mdl-navigation-drawer">
         <Link onClick={()=>document.querySelector('.mdl-layout__drawer').addEventListener('click', this.close())}  style={{textDecoration:'white', color:'black', fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/">HOME</Link>
-        <Link onClick={()=>document.querySelector('.mdl-layout__drawer').addEventListener('click', this.close())}  style={{textDecoration:'white',color:'black', fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/project">PROJECTS</Link>
         <Link onClick={()=>document.querySelector('.mdl-layout__drawer').addEventListener('click', this.close())}  style={{textDecoration:'white', color:'black', fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/resume">RESUME</Link>
+        <Link onClick={()=>document.querySelector('.mdl-layout__drawer').addEventListener('click', this.close())}  style={{textDecoration:'white',color:'black', fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/project">PROJECTS</Link>
         <Link onClick={()=>document.querySelector('.mdl-layout__drawer').addEventListener('click', this.close())}  style={{textDecoration:'white', color:'black', fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/contact">CONTACT</Link>
         <Link onClick={()=>document.querySelector('.mdl-layout__drawer').addEventListener('click', this.close())}  style={{textDecoration:'white', color:'black', fontSize:'20px', fontFamily: 'Roboto Mono,monospace'}} to="/login">LOGIN</Link>
         
