@@ -1,7 +1,7 @@
 
 
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+
 import {Grid, Cell} from 'react-mdl';
 class Login extends Component {
 	constructor(props) {
